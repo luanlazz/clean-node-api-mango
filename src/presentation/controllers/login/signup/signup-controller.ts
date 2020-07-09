@@ -17,8 +17,6 @@ export class SignUpController implements Controller {
         return badRequest(error)
       }
 
-      console.log('error', error)
-
       const { name, email, password } = httpRequest.body
 
       const account = await this.addAccount.add({
@@ -30,14 +28,10 @@ export class SignUpController implements Controller {
         return forbidden(new EmailInUseError())
       }
 
-      console.log('account', account)
-
       const accessToken = await this.authentication.auth({
         email,
         password
       })
-
-      console.log('accessToken', accessToken)
 
       return ok({ accessToken })
     } catch (error) {
