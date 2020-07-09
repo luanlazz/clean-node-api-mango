@@ -9,9 +9,7 @@
 
 Node api building using TDD, clean architecture and SOLID in course by Rodrigo Manguinho (Mango).
 
-## [**Link para a documentação da API**](http://fordevs.herokuapp.com/api-docs)
-
-> ## Features
+## Features
 
 1. [Sign up](./requirements/signup.md)
 2. [Login](./requirements/login.md)
@@ -83,7 +81,7 @@ Node api building using TDD, clean architecture and SOLID in course by Rodrigo M
 * Rebase
 * Merge
 
-## Features do Typescript
+## Features of Typescript
 
 * POO advanced
 * Interface
